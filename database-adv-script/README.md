@@ -36,3 +36,24 @@ WHERE id IN (
     GROUP BY property_id
     HAVING AVG(rating) > 4.0
 );
+
+---
+
+## 📊 Aggregations and Window Functions
+
+### 1. Total Bookings Per User
+Uses the `COUNT()` function and `GROUP BY` to calculate how many bookings each user has made.
+
+```sql
+SELECT 
+    users.id AS user_id,
+    users.name AS user_name,
+    COUNT(bookings.id) AS total_bookings
+FROM 
+    users
+LEFT JOIN 
+    bookings ON users.id = bookings.user_id
+GROUP BY 
+    users.id, users.name
+ORDER BY 
+    total_bookings DESC;
