@@ -29,7 +29,4 @@
 - 
 ## 📊 Entity-Relationship Diagram
 
-![ER Diagram](./airbnb_er_diagram.png)
-
-Or view/download it here:  
-📎 [Download ER Diagram](./airbnb_er_diagram.png
+![Image](https://github.com/user-attachments/assets/d86b901a-84e8-45ac-bc7d-212a7dff80ff)
